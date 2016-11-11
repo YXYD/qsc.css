@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>QSC.CSS开发使用文档</title>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/common.css" rel="stylesheet">
+	    <link href="css/github-gist.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+	    <script src="js/jquery.slimscroll.min.js"></script>
+	    <script src="js/highlight.js"></script>
+	    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    </head>
+    <body>
+    	<header class="navbar navbar-static-top top-nav" id="header">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a href="../" class="navbar-brand">QSC.CSS</a>
+				</div>
+				<nav id="bs-navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li><a href="Document.html">文档</a></li>
+                        <!--<li><a href="" target="_blank">GitHub</a></li>-->
+                        <!--<li><a href="" target="_blank">社区问答</a></li>-->
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="container-fluid banner" id="banner">
+			<h2>qsc.css开发使用文档</h2>
+			<p>全新前端框架</p>
+		</div>
+<div class="container-fluid content">
+<div class="row">
+    <div class="col-md-2 hidden-sm">
+	  <nav class="book-summary" style="height: 737px;" id="nav-list">
+	  <ul class="summary">
+		<li><a href="#">开发文档</a></li>
+		<li class="divider"></li>
+		<li><a href="javascript:mScroll(1)">基本概述</a></li>
+		<li><a href="javascript:mScroll(2)">下载使用</a></li>
+		<li><a href="javascript:mScroll(3)">flex布局</a></li>
+		<li><a href="javascript:mScroll(4)">文本样式</a></li>
+		<li><a href="javascript:mScroll(5)">导航栏</a></li>
+		<li><a href="javascript:mScroll(6)">底部工具栏</a></li>
+		<li><a href="javascript:mScroll(7)">按钮组工具栏</a></li>
+		<li><a href="javascript:mScroll(8)">TAB切换工具栏</a></li>
+		<li><a href="javascript:mScroll(9)">信息条</a></li>
+		<li><a href="javascript:mScroll(10)">按钮</a></li>
+		<li><a href="javascript:mScroll(11)">标签/角标/圆点</a></li>
+	  </ul>
+      </nav>
+    </div>
+	<div class="col-md-10 container-fluid">
+	<!--章节，写法：
+	<div id="content-5">
+		<h3 class="page-header">章节标题</h3>
+		<div class="book-content">
+                     章节内容
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<div class="highlight code">
+					<div class="highlight">
+						<pre><code class="HTML">
+               示例代码，全部用实体字符
+					    </code></pre>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<iframe class="example" src="地址"></iframe>
+			</div>
+		</div>
+	</div>-->
+	<div id="content-1">
+		<h3 class="page-header">qsc.css概述</h3>
+		<div class="book-content">
+<p>qsc.css是小大学堂自主研发的一套框架。结合实际项目出发，站在开发者和项目的角度，重新定义qsc.css框架。在qsc.css中使用了大量弹性响应式布局，采用容器+布局结构+控件的嵌套形式，方便开发者快速布局样式。我们充分吸取了qsc.css使用者的反馈意见和借鉴了市场上其他优秀UI框架，完成了qsc.css的开发。qsc.css遵循Google Material 设计规范，使用MIT开源协议。</p>
+<p>qsc.css为一款轻量级前端UI框架，更偏重于CSS布局及样式的构造，通俗易懂的写法及模块式的拼装方便用户自由扩展。</p>
+<p>轻小的体积、灵活的扩展性，大大提高移动端项目的体验度和开发效率。</p>
+<p>在目前市场上的UI框架中，大多数的框架以JS来实现过多的功能和布局。</p>
+<p>当然并不是否定JS在一个移动前端框架中的作用性，既然是前端框架侧重点要更多的考虑框架本身在一个项目中的资源消耗问题及如何提高用户的体验度。</p>
+<p>鉴于APICloud多窗口结构及原生模块的拼装，所以在移动端项目中qsc.css强调更多的是快速布局、灵活布局的实现，结合APICloud本身特性，提高开发效率及用户体验。</p>
+<p>在qsc.css中，全局使用rem控制尺寸，完美适应不同分辨率移动设备；新加入的主题样式表方便开发者自定义基础颜色样式，完成APP主题的定制。完美兼容IOS 5.1+ 到Android 4.2+。</p>
+<p>rem说明</p>
+<p>html默认定义的尺寸为20px，那么1rem=20px；开发者在定义尺寸及字号时可以根据此比例来控制，比如，14px = 0.7rem*20。</p>
+		</div>
+	</div>
+	<div id="content-2">
+		<h3 class="page-header">下载使用</h3>
+		<div class="book-content">
+qsc.css所有的样式均有qsc-前缀。<br />
+
+在布局app样式时，需要在&#60;head&#62;标签中添加以下元素:
+为了确保绘制和缩放的效果,需要添加 viewport 元数据标签<br />
+<code>&#60;meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/&#62;</code>
+<br />
+您还需要一条添加format-detection<br />
+<code>&#60;meta name="format-detection" content="telephone=no,email=no,date=no,address=no"&#62;</code>
+<br />
+当然了,必不可少的是加载上qsc.css样式表<br />
+<code>&#60;link rel="stylesheet" type="text/css" href="../css/qsc.css" /&#62;</code>
+<br />
+如果需要使用qsc.css的插件，再加上qsc_ex.css样式表。<br />
+<code>&#60;link rel="stylesheet" type="text/css" href="../css/qsc_ex.css" /&#62;</code>
+<br />
+<button style="background: #0062CC;height: 40px;width: 80px;">
+	<a style="color: #FFFFFF;" href="download/qsccss.rar">下载</a>
+</button>
+		</div>
+	</div>
+	<div id="content-3">
+		<h3 class="page-header">Flex布局</h3>
+		<div class="book-content">
+<p>qsc.css采用12个栅格进行布局，可以快速布局出自己所需要的框架结构,能彻底解决布局＋样式的问题。</p>
+<p>在Flex布局中，使用了qsc-col(横向)和qsc-row(纵向)两种容器，只需要把栅格放入容器中即可。</p>
+<p>Flex布局所有类支持嵌套布局，可任意进行排列。</p>
+<p>使用Flex可以方便解决垂直居中，多栏等高，等宽布局，任意对齐等。	</p>
+<p>语法详解：</p>
+A.布局类<br />
+.qsc-col 横向排列<br />
+.qsc-row 纵向排列<br />
+
+B.栅格类<br />   
+
+<p>qsc.css的柵格采用12等分的形式，</p>
+<code>.qsc-col/row-*</code>*为从1-12数字，默认将屏幕进行12等分进行排列<br />
+<code>.qsc-col/row-offset-*</code>*为从1-12数字，向左偏移量<br />
+<p>例如，如果对容器进行6等分,则每一份应该占2，<code>&lt;div class="qsc-col-2"&gt;&lt;/div&gt;</code></p>
+
+C.子元素位置<br />
++++++++++++容器内，子元素对齐的位置 ++++++++++<br />
+.qsc-top 顶端<br />
+.qsc-bottom 底部<br />
+.qsc-left 左端<br />
+.qsc-right 右端<br />
+.qsc-middle 垂直居中<br />
+.qsc-center 水平居中<br />
+
+D.容器类<br />
+<p>qsc.css中内容容器有.qsc-content(普通容器)和.qsc-card（圆角容器）以及.qsc-bar（条形容器），建议在所有外层容器中使用</p>
+.qsc-content<br />
+.qsc-card 有0.75rem（15px）的外边距<br />
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<div class="highlight code">
+					<div class="highlight">
+						<pre><code class="HTML">
+<div>&lt;div class="aui-flex-col aui-flex-center aui-border-tb"&gt;</div><div>&nbsp; &nbsp; &lt;div class="aui-flex-item-4 aui-flex-row aui-flex-middle aui-padded-10"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;h3 class="aui-text-danger"&gt;淘抢购&lt;/h3&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;可爱的你会喜欢&lt;/p&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;img src="../image/f0.png"&gt;</div><div>&nbsp; &nbsp; &lt;/div&gt;</div><div>&nbsp; &nbsp; &lt;div class="aui-flex-item-8 aui-flex-col aui-border-l"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="aui-flex-item-12 aui-padded-10 aui-border-b"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="aui-flex-col"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="aui-flex-item-9"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3 class="aui-text-info"&gt;有好货&lt;/h3&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;好品味从挑剔开始&lt;/p&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="aui-flex-item-3 aui-text-right"&gt;&lt;img src="../image/f3.png"&gt;&lt;/div&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="aui-flex-item-6 aui-padded-10"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h5 class="aui-text-warning"&gt;爱逛街&lt;/h5&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;疯狂赛车来袭&lt;/p&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src="../image/f1.png"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="aui-flex-item-6 aui-padded-10 aui-border-l"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h5 class="aui-text-success"&gt;必买清单&lt;/h5&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;都帮你整理好啦&lt;/p&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src="../image/f2.png"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</div><div>&nbsp; &nbsp; &lt;/div&gt;</div><div>&lt;/div&gt;</div><div>&lt;p class="aui-padded-10 aui-text-center"&gt;AUI Flex语法详解：&lt;/p&gt;</div><div>&lt;div class="aui-line-x"&gt;&lt;/div&gt;</div><div>&lt;div class="aui-content-padded" style="padding-top: 15px;"&gt;</div><div>&nbsp; &nbsp; &lt;p class="aui-text-danger"&gt;A.容器类&lt;/p&gt;</div><div>&nbsp; &nbsp; &lt;p&gt;&lt;mark&gt;.aui-flex-col&lt;/mark&gt; 横向排列&lt;/p&gt;</div><div>&nbsp; &nbsp; &lt;p&gt;&lt;mark&gt;.aui-flex-row&lt;/mark&gt; 纵向排列&lt;/p&gt;</div><div>&nbsp; &nbsp; &lt;p class="aui-text-danger"&gt;B.栅格类&lt;/p&gt;</div><div>&nbsp; &nbsp; &lt;p&gt;&lt;mark&gt;.aui-flex-item-*&lt;/mark&gt; &nbsp; *为从1-12数字，默认将屏幕进行12等分进行排列&lt;/p&gt;</div><div>&nbsp; &nbsp; &lt;p&gt;&lt;mark&gt;.aui-flex-offset-*&lt;/mark&gt; &nbsp; *为从1-12数字，向左偏移量&lt;/p&gt;</div><div>&nbsp; &nbsp; &lt;p&gt;&lt;mark&gt;.aui-flex-auto&lt;/mark&gt; &nbsp;自动填充宽度&lt;/p&gt;</div><div>&nbsp; &nbsp; &lt;p class="aui-text-danger"&gt;C.对齐类&lt;/p&gt;</div><div>&nbsp; &nbsp; &lt;p&gt;&lt;mark&gt;.aui-flex-top&lt;/mark&gt; 顶端对齐&lt;/p&gt;</div><div>&nbsp; &nbsp; &lt;p&gt;&lt;mark&gt;.aui-flex-bottom&lt;/mark&gt; 底部对齐&lt;/p&gt;</div><div>&nbsp; &nbsp; &lt;p&gt;&lt;mark&gt;.aui-flex-left&lt;/mark&gt; 左对齐&lt;/p&gt;</div><div>&nbsp; &nbsp; &lt;p&gt;&lt;mark&gt;.aui-flex-right&lt;/mark&gt; 右对齐&lt;/p&gt;</div><div>&nbsp; &nbsp; &lt;p&gt;&lt;mark&gt;.aui-flex-middle&lt;/mark&gt; 垂直居中&lt;/p&gt;</div><div>&nbsp; &nbsp; &lt;p&gt;&lt;mark&gt;.aui-flex-center&lt;/mark&gt; 水平居中&lt;/p&gt;</div><div>&nbsp; &nbsp; &lt;p&gt;&lt;mark&gt;.aui-flex-between&lt;/mark&gt; 等宽对齐&lt;/p&gt;</div><div>&lt;/div&gt;</div><div>&lt;p class="aui-padded-10 aui-text-center"&gt;其他案例样式（一）图片排列&lt;/p&gt;</div><div>&lt;div class="aui-line-x"&gt;&lt;/div&gt;</div><div>&lt;div class="aui-content"&gt;</div><div>&nbsp; &nbsp; &lt;div class="aui-flex-col img-list"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="aui-flex-item-4"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src="../image/demo1.png"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="aui-flex-item-4"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src="../image/demo2.png"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="aui-flex-item-4"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src="../image/demo3.png"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="aui-flex-item-4"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src="../image/demo4.png"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="aui-flex-item-4"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src="../image/demo5.png"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="aui-flex-item-4"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src="../image/demo6.png"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</div><div>&nbsp; &nbsp; &lt;/div&gt;</div><div>&lt;/div&gt;</div><div>&lt;p class="aui-padded-10 aui-text-center"&gt;其他案例样式（二）&lt;/p&gt;</div><div>&lt;div class="aui-line-x"&gt;&lt;/div&gt;</div><div>&lt;div class="aui-content"&gt;</div><div>&nbsp; &nbsp; &lt;div class="aui-flex-col"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="aui-flex-item-3 aui-border-r"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ul class="aui-list-view demo-box" style="margin-bottom: 0;"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class="aui-list-view-cell"&gt;分类一&lt;/li&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class="aui-list-view-cell"&gt;分类二&lt;/li&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class="aui-list-view-cell"&gt;分类三&lt;/li&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class="aui-list-view-cell"&gt;分类四&lt;/li&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class="aui-list-view-cell"&gt;分类五&lt;/li&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class="aui-list-view-cell"&gt;分类六&lt;/li&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class="aui-list-view-cell"&gt;分类七&lt;/li&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class="aui-list-view-cell"&gt;分类八&lt;/li&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class="aui-list-view-cell"&gt;分类九&lt;/li&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class="aui-list-view-cell"&gt;分类十&lt;/li&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ul&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="aui-flex-item-9"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ul class="aui-list-view demo-box" style="margin-bottom: 0;"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class="aui-list-view-cell aui-img"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img class="aui-img-object aui-pull-left" src="../image/demo2.png"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="aui-img-body"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 图文列表</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;图文列表缩略图在左边的样式，默认大小为80PX，文字介绍内容可以为一行也可以为两行，超出部分自动省略&lt;/p&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/li&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class="aui-list-view-cell aui-img"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img class="aui-img-object aui-pull-left" src="../image/demo5.png"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="aui-img-body"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 图文列表</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class='aui-ellipsis-2'&gt;图文列表缩略图在左边的样式，默认大小为80PX，文字介绍内容可以为一行也可以为两行，超出部分自动省略&lt;/p&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/li&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class="aui-list-view-cell aui-img"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="aui-img-body"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 图文列表</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class='aui-ellipsis-2'&gt;图文列表缩略图在左边的样式，默认大小为80PX，文字介绍内容可以为一行也可以为两行，超出部分自动省略&lt;/p&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/li&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li class="aui-list-view-cell aui-img"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img class="aui-img-object aui-pull-left" src="../image/demo6.png"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="aui-img-body"&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 图文列表</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class='aui-ellipsis-2'&gt;图文列表缩略图在左边的样式，默认大小为80PX，文字介绍内容可以为一行也可以为两行，超出部分自动省略&lt;/p&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/li&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ul&gt;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</div><div>&nbsp; &nbsp; &lt;/div&gt;</div><div>&lt;/div&gt;</div>
+						</code></pre>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<iframe class="example" src="qsc/html/flex_frm.html"></iframe>
+			</div>
+		</div>
+	</div>
+	<div id="content-4">
+		<h3 class="page-header">文本样式</h3>
+		<div class="book-content">
+			<p>基础文本样式.</p>
+
+<p>同时按照Google Material色彩规范提供了几个固定色值</p>
+
+<p>.aui-text-default &nbsp; &nbsp; &nbsp;#212121<br />
+.aui-text-primary &nbsp; &nbsp; #00bcd4<br />
+.aui-text-success &nbsp; &nbsp; #009688<br />
+.aui-text-info &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#03a9f4<br />
+.aui-text-warning &nbsp; &nbsp;#ffc107<br />
+.aui-text-danger &nbsp; &nbsp;&nbsp;#e51c23<br />
+.aui-text-pink &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;#e91e63<br />
+.aui-text-purple &nbsp; &nbsp; &nbsp;&nbsp;#673ab7<br />
+.aui-text-indigo &nbsp; &nbsp; &nbsp;&nbsp;#3f51b5</p>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<div class="highlight code">
+					<div class="highlight"><pre><code class="HTML">&lt;section class=&quot;aui-content-padded&quot;&gt;
+        &lt;h1&gt;标题一 H1&lt;/h1&gt;
+        &lt;h2&gt;标题二 H2&lt;/h2&gt;
+        &lt;h3&gt;标题三 H3&lt;/h3&gt;
+        &lt;h4&gt;标题四 H4&lt;/h4&gt;
+        &lt;h5&gt;标题五 H5&lt;/h5&gt;
+        &lt;h6&gt;标题六 H6&lt;/h6&gt;
+        &lt;p&gt;P标签字体，默认为14px&lt;/p&gt;
+        &lt;div class=&quot;aui-content&quot;&gt;
+            内容区域，qsc.css qsc.css色彩及尺寸按照Material Design标准设计
+        &lt;/div&gt;
+&lt;/section&gt;</code></pre></div>
+				</div>
+			</div>			<div class="col-md-5">
+				<iframe class="example" src="http://www.auicss.com/auiqsc.css/html/text_frm.html"></iframe>			</div>
+		</div>
+	</div>
+	<div id="content-5">
+		<h3 class="page-header">导航栏</h3>
+		<div class="book-content">
+			<p>qsc.css版本中导航栏分蓝色调和浅色调，支持嵌套按钮，tab切换栏等其他控件。</p>
+
+<p>为了兼容APICloud状态栏沉浸式的处理，当导航栏中只有中间文字或者tab等时，请不要使用.aui-title</p>
+
+<p>案例代码</p>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<div class="highlight code">
+					<div class="highlight"><pre><code class="HTML">&lt;header class=&quot;aui-bar aui-bar-nav&quot;&gt;顶部导航栏&lt;/header&gt;
+&lt;header class=&quot;aui-bar aui-bar-nav&quot; style=&quot;padding-top:25px;&quot;&gt;
+    &lt;a class=&quot;aui-pull-left&quot;&gt;
+        &lt;span class=&quot;aui-iconfont aui-icon-left&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;aui-title&quot;&gt;fixStatusBar效果&lt;/div&gt;
+&lt;/header&gt;
+&lt;header class=&quot;aui-bar aui-bar-nav&quot;&gt;
+    &lt;a class=&quot;aui-pull-left aui-btn&quot;&gt;
+        &lt;span class=&quot;aui-iconfont aui-icon-left&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;aui-title&quot;&gt;Title&lt;/div&gt;
+&lt;/header&gt;
+&lt;header class=&quot;aui-bar aui-bar-nav aui-bar-light&quot;&gt;
+    &lt;a class=&quot;aui-pull-left aui-btn&quot;&gt;
+        &lt;span class=&quot;aui-iconfont aui-icon-left&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;aui-title&quot;&gt;Title&lt;/div&gt;
+&lt;/header&gt;
+&lt;header class=&quot;aui-bar aui-bar-nav aui-bar-light&quot;&gt;
+    &lt;a class=&quot;aui-pull-left aui-btn&quot;&gt;
+        &lt;span class=&quot;aui-iconfont aui-icon-left&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;aui-title&quot;&gt;Title&lt;/div&gt;
+    &lt;a class=&quot;aui-pull-right aui-btn aui-btn-outlined&quot;&gt;
+        &lt;span class=&quot;aui-iconfont aui-icon-search&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/header&gt;
+&lt;header class=&quot;aui-bar aui-bar-nav&quot;&gt;
+    &lt;a class=&quot;aui-pull-left aui-btn&quot;&gt;
+        &lt;span class=&quot;aui-iconfont aui-icon-left&quot;&gt;&lt;/span&gt;返回
+    &lt;/a&gt;
+    &lt;div class=&quot;aui-title&quot;&gt;Title&lt;/div&gt;
+&lt;/header&gt;
+&lt;header class=&quot;aui-bar aui-bar-nav&quot;&gt;
+    &lt;a class=&quot;aui-pull-left aui-btn aui-btn-outlined&quot;&gt;
+        &lt;span class=&quot;aui-iconfont aui-icon-menu&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;aui-title&quot;&gt;Title&lt;/div&gt;
+    &lt;a class=&quot;aui-pull-right aui-btn aui-btn-outlined&quot;&gt;
+        &lt;span class=&quot;aui-iconfont aui-icon-search&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/header&gt;</code></pre></div>
+				</div>
+			</div>			<div class="col-md-5">
+				<iframe class="example" src="http://www.auicss.com/auiqsc.css/html/header_frm.html"></iframe>			</div>
+		</div>
+	</div>
+	<div id="content-6">
+		<h3 class="page-header">底部工具栏</h3>
+		<div class="book-content">
+			<p>aui-bar + aui-bar-tab组合实现，可以实现固定在底部的工具栏，可以结合aui-tab.js来使用</p>
+
+<p>aui-bar-tab-item为子级元素</p>
+
+<p>aui-active选中时样式</p>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<div class="highlight code">
+					<div class="highlight"><pre><code class="HTML">&lt;footer class=&quot;aui-bar aui-bar-tab&quot; id=&quot;footer&quot;&gt;
+    &lt;div class=&quot;aui-bar-tab-item aui-active&quot; tapmode&gt;
+        &lt;i class=&quot;aui-iconfont aui-icon-home&quot;&gt;&lt;/i&gt;
+        &lt;div class=&quot;aui-bar-tab-label&quot;&gt;首页&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aui-bar-tab-item&quot; tapmode&gt;
+        &lt;i class=&quot;aui-iconfont aui-icon-star&quot;&gt;&lt;/i&gt;
+        &lt;div class=&quot;aui-bar-tab-label&quot;&gt;收藏&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aui-bar-tab-item&quot; tapmode&gt;
+        &lt;div class=&quot;aui-badge&quot;&gt;99&lt;/div&gt;
+        &lt;i class=&quot;aui-iconfont aui-icon-cart&quot;&gt;&lt;/i&gt;
+        &lt;div class=&quot;aui-bar-tab-label&quot;&gt;购物车&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aui-bar-tab-item&quot; tapmode&gt;
+        &lt;div class=&quot;aui-dot&quot;&gt;&lt;/div&gt;
+        &lt;i class=&quot;aui-iconfont aui-icon-my&quot;&gt;&lt;/i&gt;
+        &lt;div class=&quot;aui-bar-tab-label&quot;&gt;我的&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;</code></pre></div>
+				</div>
+			</div>			<div class="col-md-5">
+				<iframe class="example" src="http://www.auicss.com/auiqsc.css/html/footer_bar_frm.html"></iframe>			</div>
+		</div>
+	</div>
+	<div id="content-7">
+		<h3 class="page-header">按钮组工具栏</h3>
+		<div class="book-content">
+			<p>aui-bar + aui-bar-btn组合使用，结合aui-tab.js可以实现有切换功能的按钮组，也可以实现数字增减器的效果，具体实例可以查看代码</p>
+
+<p>aui-bar-btn-item为子级容器</p>
+
+<p>aui-bar + aui-bar-btn +&nbsp;aui-bar-btn-full 为满屏效果</p>
+
+<p>aui-bar + aui-bar-btn +&nbsp;aui-bar-btn-sm 小号按钮组</p>
+
+<p>aui-bar + aui-bar-btn + aui-bar-btn-round 两侧为半圆形</p>
+
+<p>在顶部导航栏使用时，考虑到APICloud状态栏沉浸式样式的兼容，当导航栏只有该按钮组是直接aui-bar容器内放置按钮组。当出现左右图标时需放置在aui-title容器内。具体效果可以参考代码使用</p>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<div class="highlight code">
+					<div class="highlight"><pre><code class="HTML">&lt;div class=&quot;aui-bar aui-bar-btn aui-bar-btn-full&quot;&gt;
+    &lt;div class=&quot;aui-bar-btn-item aui-active&quot;&gt;Item&lt;/div&gt;
+    &lt;div class=&quot;aui-bar-btn-item&quot;&gt;Item&lt;/div&gt;
+    &lt;div class=&quot;aui-bar-btn-item&quot;&gt;Item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;aui-bar aui-bar-btn aui-bar-btn-sm aui-bar-btn-full&quot;&gt;
+    &lt;div class=&quot;aui-bar-btn-item aui-active&quot;&gt;Item&lt;/div&gt;
+    &lt;div class=&quot;aui-bar-btn-item&quot;&gt;Item&lt;/div&gt;
+    &lt;div class=&quot;aui-bar-btn-item&quot;&gt;Item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;aui-bar aui-bar-btn&quot; style=&quot;width:80%;&quot;&gt;
+    &lt;div class=&quot;aui-bar-btn-item aui-active&quot;&gt;Item&lt;/div&gt;
+    &lt;div class=&quot;aui-bar-btn-item&quot;&gt;Item&lt;/div&gt;
+    &lt;div class=&quot;aui-bar-btn-item&quot;&gt;Item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;aui-bar aui-bar-btn&quot; style=&quot;width:80%;&quot; type=&quot;count&quot; id=&quot;demo&quot;&gt;
+    &lt;div class=&quot;aui-bar-btn-item aui-font-size-20&quot;&gt;
+        &lt;i class=&quot;aui-iconfont aui-icon-minus&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aui-bar-btn-item&quot;&gt;
+        &lt;input type=&quot;number&quot; class=&quot;aui-input aui-text-center&quot; id=&quot;count&quot; value=&quot;1&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;aui-bar-btn-item aui-font-size-20&quot;&gt;
+        &lt;i class=&quot;aui-iconfont aui-icon-plus&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;aui-bar aui-bar-btn aui-bar-btn-round&quot; style=&quot;width:45%;&quot;&gt;
+    &lt;div class=&quot;aui-bar-btn-item aui-active&quot;&gt;Item&lt;/div&gt;
+    &lt;div class=&quot;aui-bar-btn-item&quot;&gt;Item&lt;/div&gt;
+&lt;/div&gt;
+&lt;header class=&quot;aui-bar aui-bar-nav aui-margin-b-15&quot;&gt;
+    &lt;a class=&quot;aui-pull-left aui-btn&quot;&gt;
+        &lt;span class=&quot;aui-iconfont aui-icon-left&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;aui-title&quot;&gt;
+        &lt;div class=&quot;aui-bar aui-bar-btn aui-bar-btn-round&quot;&gt;
+            &lt;div class=&quot;aui-bar-btn-item aui-active&quot;&gt;栏目一&lt;/div&gt;
+            &lt;div class=&quot;aui-bar-btn-item&quot;&gt;栏目二&lt;/div&gt;
+            &lt;div class=&quot;aui-bar-btn-item&quot;&gt;栏目三&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
+&lt;header class=&quot;aui-bar aui-bar-nav aui-bar-light&quot;&gt;
+    &lt;a class=&quot;aui-pull-left aui-btn&quot;&gt;
+        &lt;span class=&quot;aui-iconfont aui-icon-left&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;aui-title&quot;&gt;
+        &lt;div class=&quot;aui-bar aui-bar-btn aui-bar-btn-round&quot;&gt;
+            &lt;div class=&quot;aui-bar-btn-item aui-active&quot;&gt;栏目一&lt;/div&gt;
+            &lt;div class=&quot;aui-bar-btn-item&quot;&gt;栏目二&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
+&lt;header class=&quot;aui-bar aui-bar-nav&quot; style=&quot;padding-top:25px;&quot;&gt;
+    &lt;div class=&quot;aui-bar aui-bar-btn aui-bar-btn-round&quot;&gt;
+        &lt;div class=&quot;aui-bar-btn-item aui-active&quot;&gt;栏目一&lt;/div&gt;
+        &lt;div class=&quot;aui-bar-btn-item&quot;&gt;栏目二&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
+&lt;header class=&quot;aui-bar aui-bar-nav&quot; style=&quot;padding-top:25px;&quot;&gt;
+    &lt;a class=&quot;aui-pull-left&quot;&gt;
+        &lt;span class=&quot;aui-iconfont aui-icon-left&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;aui-title&quot;&gt;
+        &lt;div class=&quot;aui-bar aui-bar-btn aui-bar-btn-round&quot;&gt;
+            &lt;div class=&quot;aui-bar-btn-item aui-active&quot;&gt;栏目一&lt;/div&gt;
+            &lt;div class=&quot;aui-bar-btn-item&quot;&gt;栏目二&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/header&gt;</code></pre></div>
+				</div>
+			</div>			<div class="col-md-5">
+				<iframe class="example" src="http://www.auicss.com/auiqsc.css/html/btn_bar_frm.html"></iframe>			</div>
+		</div>
+	</div>
+	</div>
+</div>
+</div>
+<div id="totop">返回顶部</div>
+</body>
+<script src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var headerH = $("#header").height();
+	var bannerH = $("#banner").height();
+	var navW = $("#nav-list").width();
+	$("#nav-list").css("height",$(window).height());
+	$(".code").slimscroll({
+		width: $(".code").width()+'px',
+		height: "380px",
+		size:'5px',
+		distance: '0px',
+		alwaysVisible: false,
+		ailDraggable: true
+	});
+	$(window).scroll(function() {
+		console.log(navW);
+	    var scrollTop = $(window).scrollTop();
+	    if(scrollTop >= headerH+bannerH+150){
+	    	console.log(1);
+	    	$("#totop").fadeIn();
+	    	$("#nav-list").css({"position":"fixed","width":navW+"px","top":0})
+	    }else{
+	    	$("#totop").fadeOut();
+	    	$("#nav-list").css({"position":"static","width":navW+"px","top":0})
+	    }
+	});
+    //当点击跳转链接后，回到页面顶部位置
+    $("#totop").click(function(){
+        $('body,html').animate({scrollTop:0},500);
+        return false;
+    });
+	function mScroll(id){
+		$("html,body").stop(true);
+		$("html,body").animate({scrollTop: $("#content-"+id).offset().top}, 1000);
+	}
+</script>
+</html>

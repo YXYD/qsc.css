@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>APP</title>
+    <link rel="stylesheet" type="text/css" href="../css/qsc.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/qsc_ex.css"/>
+    <style type="text/css">
+    body {
+        background: #ffffff;
+    }
+    .box [class*=qsc-]:not(.qsc-col) {
+        background-color: rgba(26, 188, 156, 0.5);
+        color: #ffffff;
+        font-size: 12px;
+    }
+    .box.nobg [class*=qsc-]:not(.qsc-col){
+        background: #ffffff;
+    }
+    .box.bottom {
+        margin-bottom: 15px;
+    }
+    img {
+        width: 100%;
+    }
+    .qsc-border-t:after,
+    .qsc-border-b:after,
+    .qsc-border-l:after,
+    .qsc-border-r:after,
+    .qsc-border-tb:after,
+    .qsc-border:after {
+        border-color: #e0e0e0;
+    }
+    .demo-box {
+        height: 300px;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .demo-box::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+    }
+    .img-list {
+        padding: 2px;
+    }
+    .img-list > div {
+        padding: 2px;
+    }
+    .img-list img {
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <p class="qsc-card">
+    	<span class="qsc-text-danger">qsc.css Flex</span>
+    	(qsc.css)采用12个栅格进行布局，可以快速布局出自己所需要的框架结构，能彻底解决布局＋样式的问题。
+    </p>
+    <p class="qsc-card">在qsc.css Flex中，使用了qsc-col(横向)和qsc-row(纵向)两种容器，只需要把栅格放入容器中即可。qsc.css Flex所有类支持嵌套布局，可任意进行排列。</p>
+    <p class="qsc-card">使用qsc.css Flex可以方便解决垂直居中，多栏等高，等宽布局，任意对齐等。</p>
+    <div class="qsc-line-x"></div>
+    <p class="qsc-card">下面先来看一个使用qsc.css Flex仿淘宝的布局案例：</p>
+
+    <div class="box bottom nobg ">
+        <div class="qsc-col qsc-center qsc-border-tb">
+            <div class="qsc-col-4 qsc-row qsc-middle">
+                <h3 class="qsc-text-danger">淘抢购</h3>
+                <p>可爱的你会喜欢</p>
+                <img src="../image/f0.png">
+            </div>
+            <div class="qsc-col-8 qsc-col qsc-border-l">
+                <div class="qsc-col-12 qsc-border-b">
+                    <div class="qsc-col">
+                        <div class="qsc-col-9">
+                            <h3 class="qsc-text-info">有好货</h3>
+                            <p>好品味从挑剔开始</p>
+                        </div>
+                        <div class="qsc-col-3 qsc-text-right">
+                        	<img src="../image/f3.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="qsc-col-6">
+                    <h5 class="qsc-text-warning">爱逛街</h5>
+                    <p>疯狂赛车来袭</p>
+                    <img src="../image/f1.png">
+                </div>
+                <div class="qsc-col-6 qsc-border-l">
+                    <h5 class="qsc-text-success">必买清单</h5>
+                    <p>都帮你整理好啦</p>
+                    <img src="../image/f2.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="qsc-card qsc-text-center">qsc.css Flex语法详解：</p>
+    <div class="qsc-line-x"></div>
+    <div class="qsc-content-padded" style="padding-top: 15px;">
+        <p class="qsc-text-danger">A.容器类</p>
+        <p><mark>.qsc-col</mark> 横向排列</p>
+        <p><mark>.qsc-row</mark> 纵向排列</p>
+        <p class="qsc-text-danger">B.栅格类</p>
+        <p><mark>.qsc-col-*</mark>   *为从1-12数字，默认将屏幕进行12等分进行排列</p>
+        <p><mark>.qsc-offset-*</mark>   *为从1-12数字，向左偏移量</p>
+        <p><mark>.qsc-auto</mark>  自动填充宽度</p>
+        <p class="qsc-text-danger">C.对齐类</p>
+        <p><mark>.qsc-top</mark> 顶端对齐</p>
+        <p><mark>.qsc-bottom</mark> 底部对齐</p>
+        <p><mark>.qsc-left</mark> 左对齐</p>
+        <p><mark>.qsc-right</mark> 右对齐</p>
+        <p><mark>.qsc-middle</mark> 垂直居中</p>
+        <p><mark>.qsc-center</mark> 水平居中</p>
+    </div>
+    </div>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+    apiready = function(){
+        api.parseTapmode();
+    }
+</script>
+</html>

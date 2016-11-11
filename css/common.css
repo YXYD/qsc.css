@@ -1,0 +1,154 @@
+#totop {
+    width: 60px;
+    height: 60px;
+    background: #eeeeee;
+    border: 1px solid #ccc;
+    position:fixed;
+    right: 10px;
+    bottom:64px;
+    cursor:pointer;
+    line-height: 60px;
+    text-align: center;
+    display: none;
+    font-size: 12px;
+    border-radius: 50%;
+}
+#totop:hover {
+    background: #ff9900;
+    color: #ffffff;
+    border-color: #ff9900;
+}
+.top-nav .container-fluid {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.navbar {
+    background-color: #0288d1;
+    color: #ffffff !important;
+    margin-bottom: 0;
+}
+.navbar a {
+    color: #ffffff;
+}
+.navbar > ul >li >a:hover {
+    background-color: #ff9900;
+}
+.banner {
+    background-color: #03a9f4;
+    padding: 60px;
+    font-size: 20px;
+    color: #ffffff;
+}
+.content {
+    /*margin-top: 30px;*/
+    /*padding-right: 0;*/
+    /*padding-left: 60px;*/
+    /*padding-right: 60px;*/
+    /*padding: 0;*/
+}
+.wrapper {
+    width: 100%;
+}
+aside.sidebar {
+    width: 300px;
+    float: left;
+}
+pre {
+  /*display: block;*/
+  padding: 0 15px;
+  margin:0;
+  font-size: 13px;
+  /*word-break: break-all;*/
+  /*word-wrap: break-word;*/
+ /* background-color: #ffffff;*/
+  border: 0px solid #ccc;
+  border-radius: 0;
+}
+.highlight pre {
+    /*border-right: 1px solid #ddd;*/
+    /*border-left: 1px solid #ddd;*/
+    /*border-radius: 3px;*/
+}
+.highlight pre {
+    padding: 15px;
+    margin-top: 15px;
+    overflow-x: auto;
+    font-size: 12px;
+    color: #777;
+    word-wrap: normal;
+    white-space: pre;
+    background-color: #fafafa;
+    /*border-top: 1px solid #ddd;*/
+    /*border-bottom: 1px solid #ddd;*/
+}
+.hljs {
+    background: none;
+}
+.highlight blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    border-left: 0;
+    background: none;
+}
+code, code.HTML {
+    /*background-color: #ffffff;*/
+    padding: 0;
+    margin: 0;
+}
+
+.book-summary {
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    z-index: 1;
+    width: 100%;
+    color: #364149;
+    background: #fafafa;
+    overflow-y: auto;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+.book-summary ul.summary {
+    margin: 0;
+    padding:0;
+}
+
+.book-summary ul.summary li {
+    /*list-style: decimal !important;*/
+}
+.book-summary ul.summary li a,
+.book .book-summary ul.summary li span {
+    display: block;
+    padding: 10px 15px;
+    border-bottom: 0;
+    color: #364149;
+    background: transparent;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative
+}
+.book-summary ul.summary li.divider {
+    height: 1px;
+    margin: 7px 0;
+    overflow: hidden;
+    background: rgba(0,0,0,0.07)
+}
+.book-summary ul.summary li.active>a,
+.book-summary ul.summary li a:hover {
+    color: #008cff;
+    background: transparent;
+    text-decoration: none
+}
+.book-content,.book-content p {
+    font-size: 16px;
+    color: #424242;
+}
+.example {
+    border: none;
+    height: 520px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+}
